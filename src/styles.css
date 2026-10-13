@@ -9,7 +9,10 @@
   --rose-deep: #6E2A37;
   --line: #E3CCC6;
 
-  --serif: "Bodoni Moda", "Didot", Georgia, serif;
+  /* Display face for the hero name and section numbers only. */
+  --display: "Bodoni Moda", "Didot", Georgia, serif;
+  /* Reading serif for headings: sturdy strokes that hold up at any size. */
+  --serif: Georgia, "Source Serif 4", "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
   --hand: "Caveat", "Bradley Hand", cursive;
 
@@ -117,7 +120,7 @@ em { font-style: italic; }
   grid-template-columns: minmax(0, 1fr) 27vw minmax(0, 1fr);
   align-items: center;
   pointer-events: none;
-  font: 400 clamp(2.4rem, 7.1vw, 8.6rem) / .8 var(--serif);
+  font: 400 clamp(2.4rem, 7.1vw, 8.6rem) / .8 var(--display);
   letter-spacing: .02em;
   text-transform: uppercase;
   color: #fff;
@@ -197,19 +200,19 @@ em { font-style: italic; }
 .section { padding-block: clamp(80px, 12vw, 140px); }
 .section--tint { background: var(--blush); }
 .section__head { display: flex; gap: clamp(16px, 4vw, 48px); align-items: flex-start; margin-bottom: 56px; }
-.section__num { font: 400 clamp(3rem, 7vw, 5.5rem)/.85 var(--serif); color: var(--rose); opacity: .35; }
-.section__title { margin: 0; font: 400 clamp(2rem, 4.5vw, 3.2rem)/1.1 var(--serif); }
+.section__num { font: 400 clamp(3rem, 7vw, 5.5rem)/.85 var(--display); color: var(--rose); opacity: .35; }
+.section__title { margin: 0; font: 700 clamp(2rem, 4.5vw, 3.1rem)/1.12 var(--serif); letter-spacing: -.01em; }
 .section__title em { color: var(--rose); }
 
 /* About */
 .about { display: grid; gap: 36px; }
-.statement { margin: 0; max-width: 22ch; font: 400 clamp(2rem, 5vw, 3.6rem)/1.12 var(--serif); }
+.statement { margin: 0; max-width: 24ch; font: 700 clamp(2rem, 4.6vw, 3.4rem)/1.15 var(--serif); letter-spacing: -.01em; }
 .statement em { color: var(--rose); }
 .about__body { max-width: 60ch; color: var(--ink-soft); font-size: 1.08rem; }
 .handnote { font: 500 1.6rem var(--hand); color: var(--rose); }
 .stats { list-style: none; margin: 12px 0 0; padding: 32px 0 0; border-top: 1px solid var(--line);
   display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; }
-.stats__num { display: block; font: 400 clamp(2.6rem, 5vw, 3.6rem)/1 var(--serif); color: var(--rose); }
+.stats__num { display: block; font: 700 clamp(2.4rem, 4.6vw, 3.3rem)/1 var(--serif); color: var(--rose); }
 .stats__label { font: 600 .72rem var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft); }
 
 /* Filters & chips */
@@ -241,7 +244,7 @@ em { font-style: italic; }
 }
 .card__cat, .card__title, .card__hook, .card .tags, .card__link { margin-inline: 8px; }
 .card__cat { margin-top: 0; margin-bottom: 6px; font: 600 .7rem var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--rose); }
-.card__title { margin: 0 0 8px; font: 500 1.6rem/1.2 var(--serif); }
+.card__title { margin: 0 0 8px; font: 700 1.5rem/1.2 var(--serif); }
 .card__hook { margin-top: 0; color: var(--ink-soft); flex: 1; }
 .card__link { margin-top: 16px; font-weight: 600; font-size: .9rem; color: var(--rose); text-decoration: none; }
 .card__link:hover { text-decoration: underline; }
@@ -257,9 +260,9 @@ em { font-style: italic; }
   padding: 36px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
 }
 .job__stat { border-right: 1px solid var(--line); padding-right: 24px; }
-.job__num { display: block; font: 400 clamp(2.6rem, 5vw, 3.8rem)/1 var(--serif); color: var(--rose); }
+.job__num { display: block; font: 700 clamp(2.4rem, 4.6vw, 3.4rem)/1 var(--serif); color: var(--rose); }
 .job__numlabel { font-size: .85rem; color: var(--ink-soft); }
-.job__role { margin: 0 0 14px; font: 500 1.6rem/1.2 var(--serif); }
+.job__role { margin: 0 0 14px; font: 700 1.45rem/1.25 var(--serif); }
 .job__role span { font-style: italic; color: var(--ink-soft); font-weight: 400; }
 .job__list { margin: 0; padding-left: 1.1em; color: var(--ink-soft); }
 .job__list li + li { margin-top: 6px; }
@@ -270,14 +273,14 @@ em { font-style: italic; }
   display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px;
   padding: 40px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
 }
-.edu__degree { margin: 0; font: 500 2rem/1.15 var(--serif); }
+.edu__degree { margin: 0; font: 700 1.9rem/1.15 var(--serif); }
 .edu__school { margin: 4px 0 28px; font: italic 1.15rem var(--serif); color: var(--ink-soft); }
 .edu__facts { display: flex; gap: 32px; flex-wrap: wrap; margin: 0; }
 .edu__facts dt { font: 600 .68rem var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft); }
-.edu__facts dd { margin: 4px 0 0; font: 400 1.6rem var(--serif); color: var(--rose); }
+.edu__facts dd { margin: 4px 0 0; font: 700 1.4rem var(--serif); color: var(--rose); }
 .edu__courses { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .course-list { list-style: none; padding: 0; margin: 0; }
-.course-list li { padding: 10px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.1rem; }
+.course-list li { padding: 10px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.05rem; }
 
 /* Tabs */
 .tabs__list { display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 1px solid var(--line); margin-bottom: 36px; }
@@ -309,7 +312,7 @@ em { font-style: italic; }
   padding-block: clamp(100px, 14vw, 170px);
   background: linear-gradient(160deg, #8E3B4A, #4A2027); color: #fff; text-align: center;
 }
-.contact__title { margin: 0 0 28px; font: 400 clamp(2.6rem, 8vw, 6rem)/1 var(--serif); }
+.contact__title { margin: 0 0 28px; font: 700 clamp(2.4rem, 7vw, 5rem)/1.05 var(--serif); letter-spacing: -.01em; }
 .contact__email { font: italic 400 clamp(1.2rem, 3vw, 1.8rem) var(--serif); text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 4px; word-break: break-all; }
 .contact__email:hover { border-bottom-color: #fff; }
