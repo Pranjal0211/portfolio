@@ -25,7 +25,7 @@
         <a href="#experience">Experience</a>
         <a href="#education">Study</a>
         <a href="#skills">Skills</a>
-        <a href="#beyond">Beyond</a>
+        <a href="#beyond">Play</a>
         <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
       </nav>
     </div>
@@ -50,7 +50,7 @@
       <span class="hero__last">Sharma</span>
     </h1>
     <div class="hero__meta">
-      <p class="hero__tagline">Design, product and the people they're for.</p>
+      <p class="hero__tagline">Full-stack developer. Builds with AI, tests like a skeptic.</p>
       <div class="hero__ctas">
         <a href="#work" class="btn btn--solid">Work <span aria-hidden="true">↓</span></a>
         <a href="#skills" class="btn btn--ghost">Skills <span aria-hidden="true">→</span></a>
@@ -67,17 +67,19 @@
       <div class="wrap about">
         <p class="eyebrow">Hello</p>
         <h2 class="statement reveal">
-          I like problems that sit between <em>how things work</em> and <em>how people feel</em> about them.
+          I write software from both sides of the bug: <em>building the feature,</em> then <em>trying to break it.</em>
         </h2>
         <div class="about__body reveal">
-          <p>Write two or three short paragraphs here. Who you are, what you're studying or doing now, and the thread that ties your interests together. Keep it in your own voice.</p>
-          <p>End with what you're looking for: an internship, a full-time role, collaborators, or just good conversations.</p>
-          <p class="handnote">— currently based in Your City ✦</p>
+          <p>I'm a full-stack developer with a Master's in Computer Science from Cal State Fullerton. On the front end I work in React, Next.js and TypeScript. On the back end it's Java and Spring Boot, REST APIs and microservices, running on AWS and Azure.</p>
+          <p>Right now I'm a Software Development Engineer in Test at Norwegian Cruise Line and a Software Engineer at V.Two. Before that, I built healthcare apps at Humanitarians AI and Cognizant, and spent a year teaching 120+ undergrads at CSUF.</p>
+          <p>Lately I've been going deep on agentic AI: the Claude API, tool use and the Model Context Protocol. I'm now an Anthropic-certified Claude Developer and Associate.</p>
+          <p class="handnote">— currently building from Greater Philadelphia ✦</p>
         </div>
         <ul class="stats reveal">
-          <li><span class="stats__num">3</span><span class="stats__label">Internships</span></li>
-          <li><span class="stats__num">12+</span><span class="stats__label">Projects shipped</span></li>
-          <li><span class="stats__num">2</span><span class="stats__label">Languages spoken</span></li>
+          <li><span class="stats__num">5+</span><span class="stats__label">Years shipping software</span></li>
+          <li><span class="stats__num">98%</span><span class="stats__label">Test coverage, JUnit</span></li>
+          <li><span class="stats__num">120+</span><span class="stats__label">Students mentored</span></li>
+          <li><span class="stats__num">6</span><span class="stats__label">Anthropic credentials</span></li>
         </ul>
       </div>
     </section>
@@ -89,52 +91,70 @@
           <span class="section__num">01</span>
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2 class="section__title">Things I've made,<br><em>and why they mattered.</em></h2>
+            <h2 class="section__title">Things I've built,<br><em>and who they're for.</em></h2>
           </div>
         </header>
 
         <div class="filters" role="group" aria-label="Filter projects">
           <button class="chip is-active" data-filter="all">All</button>
-          <button class="chip" data-filter="product">Product</button>
-          <button class="chip" data-filter="code">Code</button>
-          <button class="chip" data-filter="strategy">Strategy</button>
+          <button class="chip" data-filter="fullstack">Full stack</button>
+          <button class="chip" data-filter="ai">AI &amp; ML</button>
+          <button class="chip" data-filter="web">Web</button>
         </div>
 
         <div class="cards">
-          <article class="card reveal" data-cat="product">
-            <div class="card__media" style="--tint:#E9C9C1"></div>
-            <p class="card__cat">Product · 2026</p>
-            <h3 class="card__title">Project One</h3>
-            <p class="card__hook">One sentence on the problem and what changed because of your work.</p>
-            <ul class="tags"><li>Figma</li><li>User research</li></ul>
-            <a href="#" class="card__link">View case study →</a>
+          <article class="card reveal" data-cat="fullstack">
+            <div class="card__media" style="--tint:#E9C9C1"><span>Check it out.</span></div>
+            <p class="card__cat">Full stack · CSU Fullerton</p>
+            <h3 class="card__title">LibManage</h3>
+            <p class="card__hook">A library management system where the interesting part is trust: JWT, OAuth2 and OpenID Connect decide who can check out what, with role-based permissions on a Spring Boot API.</p>
+            <ul class="tags"><li>React</li><li>Spring Boot</li><li>Java</li><li>OAuth2</li></ul>
+            <a href="https://github.com/Pranjal0211/LibManage" class="card__link" target="_blank" rel="noopener">GitHub →</a>
           </article>
 
-          <article class="card reveal" data-cat="code">
-            <div class="card__media" style="--tint:#D9C7B5"></div>
-            <p class="card__cat">Engineering · 2026</p>
-            <h3 class="card__title">Project Two</h3>
-            <p class="card__hook">A web app that does one clear thing. Mention a number if you have one.</p>
-            <ul class="tags"><li>React</li><li>Python</li><li>SQL</li></ul>
-            <a href="#" class="card__link">GitHub →</a>
+          <article class="card reveal" data-cat="web ai">
+            <div class="card__media" style="--tint:#D9C7B5"><span>Read it to me.</span></div>
+            <p class="card__cat">Accessibility · 2025</p>
+            <h3 class="card__title">WebSpeak</h3>
+            <p class="card__hook">Turns any web page into speech, translated into the language you choose. Built for people with low vision, readers who struggle with text, and anyone who'd rather listen.</p>
+            <ul class="tags"><li>React</li><li>Azure Speech SDK</li><li>Google TTS</li></ul>
+            <a href="https://github.com/Pranjal0211/Webspeak-app" class="card__link" target="_blank" rel="noopener">GitHub →</a>
           </article>
 
-          <article class="card reveal" data-cat="strategy">
-            <div class="card__media" style="--tint:#E5D3C8"></div>
-            <p class="card__cat">Strategy · 2025</p>
-            <h3 class="card__title">Project Three</h3>
-            <p class="card__hook">A brand or market teardown: the answer first, then the evidence.</p>
-            <ul class="tags"><li>Market sizing</li><li>Positioning</li></ul>
-            <a href="#" class="card__link">Read it →</a>
+          <article class="card reveal" data-cat="ai">
+            <div class="card__media" style="--tint:#E5D3C8"><span>Weigh the odds.</span></div>
+            <p class="card__cat">Probabilistic AI · 2024</p>
+            <h3 class="card__title">Heart Disease Diagnosis</h3>
+            <p class="card__hook">An expert system that models heart-disease risk as a Bayesian network, so you can ask how each symptom or vital sign shifts the odds of a diagnosis.</p>
+            <ul class="tags"><li>Python</li><li>pgmpy</li><li>Bayesian networks</li><li>pandas</li></ul>
+            <a href="https://github.com/Pranjal0211/heart-disease-diagnosis" class="card__link" target="_blank" rel="noopener">GitHub →</a>
           </article>
 
-          <article class="card reveal" data-cat="product code">
-            <div class="card__media" style="--tint:#CFB7AE"></div>
-            <p class="card__cat">Side project · 2025</p>
-            <h3 class="card__title">Project Four</h3>
-            <p class="card__hook">Something you built just because you were curious. These are often the most memorable.</p>
-            <ul class="tags"><li>JavaScript</li><li>APIs</li></ul>
-            <a href="#" class="card__link">Try it →</a>
+          <article class="card reveal" data-cat="fullstack web">
+            <div class="card__media" style="--tint:#CFB7AE"><span>File it online.</span></div>
+            <p class="card__cat">Civic tech · 2025</p>
+            <h3 class="card__title">Virtual Police Station</h3>
+            <p class="card__hook">A web app that brings police-station services online, so reporting something doesn't have to start with a trip to the station.</p>
+            <ul class="tags"><li>JavaScript</li><li>EJS</li><li>Python</li></ul>
+            <a href="https://github.com/Pranjal0211/Virtual-Police-Station" class="card__link" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+
+          <article class="card reveal" data-cat="ai">
+            <div class="card__media" style="--tint:#DCC4BB"><span>Your move.</span></div>
+            <p class="card__cat">Game AI · 2023</p>
+            <h3 class="card__title">Reversi</h3>
+            <p class="card__hook">A Reversi opponent that searches ahead with minimax and alpha-beta pruning, skipping the moves that can't matter so it can think deeper, faster.</p>
+            <ul class="tags"><li>Python</li><li>Alpha-beta pruning</li></ul>
+            <a href="https://github.com/Pranjal0211/ReversiGame" class="card__link" target="_blank" rel="noopener">GitHub →</a>
+          </article>
+
+          <article class="card reveal" data-cat="web">
+            <div class="card__media" style="--tint:#EAD6CF"><span>Hello.</span></div>
+            <p class="card__cat">This site · 2026</p>
+            <h3 class="card__title">This portfolio</h3>
+            <p class="card__hook">Hand-built with no framework: plain HTML, CSS and JavaScript, an editorial serif, and a hero that splits my name around the photo.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="https://github.com/Pranjal0211/portfolio" class="card__link" target="_blank" rel="noopener">GitHub →</a>
           </article>
         </div>
       </div>
@@ -154,31 +174,92 @@
         <div class="jobs">
           <article class="job reveal">
             <div class="job__stat">
-              <span class="job__num">40%</span>
-              <span class="job__numlabel">faster onboarding</span>
+              <span class="job__num">E2E</span>
+              <span class="job__numlabel">test automation</span>
             </div>
             <div class="job__body">
-              <p class="eyebrow">Summer 2026 · City</p>
-              <h3 class="job__role">Role Title <span>at Company</span></h3>
+              <p class="eyebrow">Dec 2025 – Present · Remote</p>
+              <h3 class="job__role">Software Development Engineer in Test <span>at Norwegian Cruise Line Holdings</span></h3>
               <ul class="job__list">
-                <li>Lead with the outcome, then how you did it.</li>
-                <li>Name the tools and the people you worked with.</li>
-                <li>One bullet with a concrete number.</li>
+                <li>Writing automated end-to-end tests with Playwright for Vue.js web applications.</li>
+                <li>Catching regressions before they reach production, so releases go out with confidence.</li>
               </ul>
             </div>
           </article>
 
           <article class="job reveal">
             <div class="job__stat">
-              <span class="job__num">$2M</span>
-              <span class="job__numlabel">pipeline analyzed</span>
+              <span class="job__num">Now</span>
+              <span class="job__numlabel">front end to back end</span>
             </div>
             <div class="job__body">
-              <p class="eyebrow">Spring 2026 · Remote</p>
-              <h3 class="job__role">Role Title <span>at Company</span></h3>
+              <p class="eyebrow">May 2025 – Present · Los Angeles, hybrid</p>
+              <h3 class="job__role">Software Engineer <span>at V.Two</span></h3>
               <ul class="job__list">
-                <li>What you owned end to end.</li>
-                <li>What you recommended and what happened next.</li>
+                <li>Full-stack development across client projects, with a focus on back-end web services in JavaScript.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__stat">
+              <span class="job__num">React</span>
+              <span class="job__numlabel">front-end development</span>
+            </div>
+            <div class="job__body">
+              <p class="eyebrow">Mar 2025 – May 2025 · Los Angeles</p>
+              <h3 class="job__role">Software Developer <span>at Product Perfect</span></h3>
+              <ul class="job__list">
+                <li>Built front-end features in React for client products.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__stat">
+              <span class="job__num">98%</span>
+              <span class="job__numlabel">test coverage with JUnit</span>
+            </div>
+            <div class="job__body">
+              <p class="eyebrow">Jun 2024 – Feb 2025 · Fullerton, CA</p>
+              <h3 class="job__role">Software Developer <span>at Humanitarians AI</span></h3>
+              <ul class="job__list">
+                <li>Built Java microservices with Spring Boot and cut bug-related downtime by 40%.</li>
+                <li>Created responsive React interfaces for healthcare applications.</li>
+                <li>Reduced PostgreSQL query response times by 30% through schema optimization.</li>
+                <li>Set up CI/CD with Jenkins and GitLab (95% deployment success) on AWS EC2, S3, RDS and Lambda.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__stat">
+              <span class="job__num">120+</span>
+              <span class="job__numlabel">undergraduates mentored</span>
+            </div>
+            <div class="job__body">
+              <p class="eyebrow">Apr 2023 – May 2024 · Fullerton, CA</p>
+              <h3 class="job__role">Teaching Associate &amp; Research Assistant <span>at Cal State Fullerton</span></h3>
+              <ul class="job__list">
+                <li>Taught Professional Ethics in Computing, covering networking, cybersecurity, privacy, intellectual property and data mining.</li>
+                <li>Ran system design workshops on building scalable front ends and back ends.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__stat">
+              <span class="job__num">26</span>
+              <span class="job__numlabel">features shipped</span>
+            </div>
+            <div class="job__body">
+              <p class="eyebrow">Feb 2021 – Jul 2022 · India</p>
+              <h3 class="job__role">Programmer Analyst <span>at Cognizant</span></h3>
+              <ul class="job__list">
+                <li>Shipped 26 features on a pharmaceutical portal using Scrum and Kanban.</li>
+                <li>Built React front ends with at least 95% unit test coverage, backed by MySQL at 99.9% uptime.</li>
+                <li>Managed access for 400+ employees through Active Directory, which cut service request resolution time by 20%.</li>
+                <li>Started as an intern and earned ServiceNow CSA and CAD certifications.</li>
               </ul>
             </div>
           </article>
@@ -193,31 +274,39 @@
           <span class="section__num">03</span>
           <div>
             <p class="eyebrow">Study</p>
-            <h2 class="section__title">What I'm learning,<br><em>from two directions.</em></h2>
+            <h2 class="section__title">Where I learned,<br><em>and what I keep learning.</em></h2>
           </div>
         </header>
 
         <div class="edu reveal">
           <div class="edu__main">
-            <h3 class="edu__degree">B.S. in Your Major</h3>
-            <p class="edu__school">Your University</p>
+            <h3 class="edu__degree">M.S. in Computer Science</h3>
+            <p class="edu__school">California State University, Fullerton</p>
             <dl class="edu__facts">
-              <div><dt>GPA</dt><dd>3.9</dd></div>
-              <div><dt>Graduating</dt><dd>May 2028</dd></div>
-              <div><dt>Minor</dt><dd>Your Minor</dd></div>
+              <div><dt>Taught</dt><dd>120+ students</dd></div>
+              <div><dt>Research</dt><dd>2023</dd></div>
+              <div><dt>Built</dt><dd>LibManage</dd></div>
             </dl>
           </div>
           <div class="edu__courses">
             <div>
-              <p class="eyebrow">The technical side</p>
+              <p class="eyebrow">Anthropic credentials</p>
               <ul class="course-list">
-                <li>Data Structures</li><li>Databases</li><li>Systems Analysis</li><li>Statistics</li>
+                <li>Claude Certified Developer</li>
+                <li>Claude Certified Associate</li>
+                <li>Building with the Claude API</li>
+                <li>Model Context Protocol</li>
+                <li>Claude Code in Action</li>
+                <li>Agent Skills</li>
               </ul>
             </div>
             <div>
-              <p class="eyebrow">The human side</p>
+              <p class="eyebrow">Other certifications</p>
               <ul class="course-list">
-                <li>Psychology</li><li>Consumer Behavior</li><li>Design Thinking</li><li>Writing</li>
+                <li>ServiceNow CSA &amp; CAD</li>
+                <li>Microsoft Software Development</li>
+                <li>Docker Compose</li>
+                <li>MTA: Programming in Java</li>
               </ul>
             </div>
           </div>
@@ -238,58 +327,58 @@
 
         <div class="tabs reveal">
           <div class="tabs__list" role="tablist">
-            <button role="tab" aria-selected="true" aria-controls="tab-build" id="t-build">Build</button>
-            <button role="tab" aria-selected="false" aria-controls="tab-analyze" id="t-analyze" tabindex="-1">Analyze</button>
-            <button role="tab" aria-selected="false" aria-controls="tab-design" id="t-design" tabindex="-1">Design</button>
-            <button role="tab" aria-selected="false" aria-controls="tab-lead" id="t-lead" tabindex="-1">Lead</button>
+            <button role="tab" aria-selected="true" aria-controls="tab-front" id="t-front">Front end</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-back" id="t-back" tabindex="-1">Back end</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-test" id="t-test" tabindex="-1">Testing</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-ai" id="t-ai" tabindex="-1">Cloud &amp; AI</button>
           </div>
-          <div class="tabs__panel" role="tabpanel" id="tab-build" aria-labelledby="t-build">
-            <p class="tabs__lede">Turning an idea into something people can click.</p>
-            <ul class="tags tags--lg"><li>JavaScript</li><li>React</li><li>Python</li><li>HTML &amp; CSS</li><li>Git</li></ul>
+          <div class="tabs__panel" role="tabpanel" id="tab-front" aria-labelledby="t-front">
+            <p class="tabs__lede">Interfaces that load fast and feel obvious.</p>
+            <ul class="tags tags--lg"><li>React</li><li>Next.js</li><li>TypeScript</li><li>Vue.js</li><li>Redux</li><li>Tailwind CSS</li><li>Server-side rendering</li></ul>
           </div>
-          <div class="tabs__panel" role="tabpanel" id="tab-analyze" aria-labelledby="t-analyze" hidden>
-            <p class="tabs__lede">Finding the one number that changes the decision.</p>
-            <ul class="tags tags--lg"><li>SQL</li><li>Excel</li><li>Tableau</li><li>A/B testing</li></ul>
+          <div class="tabs__panel" role="tabpanel" id="tab-back" aria-labelledby="t-back" hidden>
+            <p class="tabs__lede">APIs and data that hold up under load.</p>
+            <ul class="tags tags--lg"><li>Java</li><li>Spring Boot</li><li>Microservices</li><li>REST APIs</li><li>Node.js</li><li>Flask</li><li>JWT &amp; OAuth2</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>JMS</li></ul>
           </div>
-          <div class="tabs__panel" role="tabpanel" id="tab-design" aria-labelledby="t-design" hidden>
-            <p class="tabs__lede">Making the right thing feel obvious.</p>
-            <ul class="tags tags--lg"><li>Figma</li><li>User interviews</li><li>Prototyping</li><li>Accessibility</li></ul>
+          <div class="tabs__panel" role="tabpanel" id="tab-test" aria-labelledby="t-test" hidden>
+            <p class="tabs__lede">Finding bugs before users do.</p>
+            <ul class="tags tags--lg"><li>Playwright</li><li>JUnit</li><li>End-to-end testing</li><li>Unit testing</li><li>Jenkins</li><li>GitLab CI/CD</li><li>Agile &amp; Scrum</li><li>JIRA</li></ul>
           </div>
-          <div class="tabs__panel" role="tabpanel" id="tab-lead" aria-labelledby="t-lead" hidden>
-            <p class="tabs__lede">Getting a room of people pointed the same way.</p>
-            <ul class="tags tags--lg"><li>Agile</li><li>Roadmapping</li><li>Presenting</li><li>Mentoring</li></ul>
+          <div class="tabs__panel" role="tabpanel" id="tab-ai" aria-labelledby="t-ai" hidden>
+            <p class="tabs__lede">Infrastructure underneath, and agents on top.</p>
+            <ul class="tags tags--lg"><li>AWS (EC2, S3, RDS, Lambda)</li><li>Azure</li><li>Docker</li><li>Claude API</li><li>Model Context Protocol</li><li>Agentic workflows</li><li>Prompt engineering</li><li>Python</li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ BEYOND ============ -->
+    <!-- ============ PLAY ============ -->
     <section class="section section--tint" id="beyond">
       <div class="wrap">
         <header class="section__head">
           <span class="section__num">05</span>
           <div>
-            <p class="eyebrow">Beyond work</p>
-            <h2 class="section__title">The rest of me,<br><em>in no particular order.</em></h2>
+            <p class="eyebrow">Side quests</p>
+            <h2 class="section__title">Things I built<br><em>just to see if I could.</em></h2>
           </div>
         </header>
         <div class="beyond">
-          <figure class="polaroid reveal" style="--rot:-3deg">
-            <div class="polaroid__img" style="--tint:#E2C2B8"></div>
-            <figcaption>morning runs</figcaption>
-          </figure>
-          <figure class="polaroid reveal" style="--rot:2deg">
-            <div class="polaroid__img" style="--tint:#D7C3B3"></div>
-            <figcaption>reading list</figcaption>
-          </figure>
-          <figure class="polaroid reveal" style="--rot:-1.5deg">
-            <div class="polaroid__img" style="--tint:#E8D1C6"></div>
-            <figcaption>favorite café</figcaption>
-          </figure>
-          <figure class="polaroid reveal" style="--rot:3deg">
-            <div class="polaroid__img" style="--tint:#CDB4AA"></div>
-            <figcaption>on repeat</figcaption>
-          </figure>
+          <a class="polaroid reveal" style="--rot:-3deg" href="https://github.com/Pranjal0211/drum-kit" target="_blank" rel="noopener">
+            <div class="polaroid__img" style="--tint:#E2C2B8"><span>♫</span></div>
+            <p class="polaroid__cap">a drum kit you play with your keyboard</p>
+          </a>
+          <a class="polaroid reveal" style="--rot:2deg" href="https://github.com/Pranjal0211/meme_webpage" target="_blank" rel="noopener">
+            <div class="polaroid__img" style="--tint:#D7C3B3"><span>ha!</span></div>
+            <p class="polaroid__cap">a meme page, for science</p>
+          </a>
+          <a class="polaroid reveal" style="--rot:-1.5deg" href="https://github.com/Pranjal0211/Namaste-React" target="_blank" rel="noopener">
+            <div class="polaroid__img" style="--tint:#E8D1C6"><span>&lt;/&gt;</span></div>
+            <p class="polaroid__cap">my React notebook</p>
+          </a>
+          <a class="polaroid reveal" style="--rot:3deg" href="https://github.com/Pranjal0211/DSA-Programming" target="_blank" rel="noopener">
+            <div class="polaroid__img" style="--tint:#CDB4AA"><span>O(n)</span></div>
+            <p class="polaroid__cap">daily data structures reps</p>
+          </a>
         </div>
       </div>
     </section>
@@ -301,8 +390,8 @@
         <h2 class="contact__title">What should we <em>build?</em></h2>
         <a class="contact__email" href="mailto:pranjalsharma0211@gmail.com">pranjalsharma0211@gmail.com</a>
         <div class="contact__links">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/pranjal-sharma02/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Pranjal0211" target="_blank" rel="noopener">GitHub ↗</a>
           <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
         </div>
       </div>
