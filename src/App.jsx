@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Nav from './components/Nav.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
@@ -10,6 +11,13 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
 export default function App() {
+  // Sections render after the browser's own #hash lookup, so a deep link
+  // like /portfolio/#work would land at the top. Jump there once mounted.
+  useEffect(() => {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    if (id) document.getElementById(id)?.scrollIntoView({ behavior: 'instant' });
+  }, []);
+
   return (
     <>
       <Nav />
