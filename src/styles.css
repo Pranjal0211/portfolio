@@ -4,7 +4,7 @@
   --cream: #FBF6F2;
   --paper: #FFFDFB;
   --ink: #2A1A17;
-  --ink-soft: #6B5550;
+  --ink-soft: #4A3833;
   --rose: #8E3B4A;
   --rose-deep: #6E2A37;
   --line: #E3CCC6;
@@ -13,7 +13,8 @@
   --display: "Bodoni Moda", "Didot", Georgia, serif;
   /* Reading serif for headings: sturdy strokes that hold up at any size. */
   --serif: Georgia, "Source Serif 4", "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, sans-serif;
+  /* The reader's own UI font: crisp at small sizes on every platform. */
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --hand: "Caveat", "Bradley Hand", cursive;
 
   --wrap: 1100px;
@@ -27,7 +28,7 @@ body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
-  font: 400 1rem/1.65 var(--sans);
+  font: 400 1.0625rem/1.7 var(--sans);
   -webkit-font-smoothing: antialiased;
 }
 img { max-width: 100%; display: block; }
@@ -208,7 +209,7 @@ em { font-style: italic; }
 .about { display: grid; gap: 36px; }
 .statement { margin: 0; max-width: 24ch; font: 700 clamp(2rem, 4.6vw, 3.4rem)/1.15 var(--serif); letter-spacing: -.01em; }
 .statement em { color: var(--rose); }
-.about__body { max-width: 60ch; color: var(--ink-soft); font-size: 1.08rem; }
+.about__body { max-width: 64ch; color: var(--ink); font-size: 1.125rem; line-height: 1.75; }
 .handnote { font: 500 1.6rem var(--hand); color: var(--rose); }
 .stats { list-style: none; margin: 12px 0 0; padding: 32px 0 0; border-top: 1px solid var(--line);
   display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; }
@@ -250,7 +251,7 @@ em { font-style: italic; }
 .card__link:hover { text-decoration: underline; }
 
 .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.tags li { font-size: .75rem; padding: 4px 10px; border-radius: 999px; background: var(--blush); color: var(--rose-deep); }
+.tags li { font-size: .8rem; padding: 4px 10px; border-radius: 999px; background: var(--blush); color: var(--rose-deep); }
 .tags--lg li { font-size: .95rem; padding: 10px 18px; background: var(--paper); border: 1px solid var(--line); }
 
 /* Jobs */
@@ -264,7 +265,7 @@ em { font-style: italic; }
 .job__numlabel { font-size: .85rem; color: var(--ink-soft); }
 .job__role { margin: 0 0 14px; font: 700 1.45rem/1.25 var(--serif); }
 .job__role span { font-style: italic; color: var(--ink-soft); font-weight: 400; }
-.job__list { margin: 0; padding-left: 1.1em; color: var(--ink-soft); }
+.job__list { margin: 0; padding-left: 1.1em; color: var(--ink); }
 .job__list li + li { margin-top: 6px; }
 .job__list li::marker { color: var(--rose); }
 
