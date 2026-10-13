@@ -23,6 +23,14 @@
 }
 
 * { box-sizing: border-box; }
+
+/* Sparkle cursor on mouse/trackpad devices; a rose sparkle over anything clickable. */
+@media (pointer: fine) {
+  html { cursor: url("./assets/cursor-sparkle.svg") 13 16, auto; }
+  a, button, [role="tab"], summary, label {
+    cursor: url("./assets/cursor-sparkle-hot.svg") 13 16, pointer;
+  }
+}
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 body {
   margin: 0;
@@ -220,7 +228,7 @@ em { font-style: italic; }
 .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
 .chip {
   border: 1px solid var(--line); background: var(--paper); color: var(--ink);
-  padding: 8px 18px; border-radius: 999px; cursor: pointer;
+  padding: 8px 18px; border-radius: 999px;
   font: 500 .8rem var(--sans); letter-spacing: .05em; transition: all .2s;
 }
 .chip:hover { border-color: var(--rose); }
@@ -286,7 +294,7 @@ em { font-style: italic; }
 /* Tabs */
 .tabs__list { display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 1px solid var(--line); margin-bottom: 36px; }
 .tabs__list button {
-  background: none; border: 0; cursor: pointer; padding: 14px 22px; margin-bottom: -1px;
+  background: none; border: 0; padding: 14px 22px; margin-bottom: -1px;
   font: 400 1.4rem var(--serif); color: var(--ink-soft); border-bottom: 2px solid transparent;
   transition: color .2s, border-color .2s;
 }
@@ -345,7 +353,7 @@ em { font-style: italic; }
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .nav__toggle {
-    display: grid; gap: 6px; margin-left: auto; background: none; border: 0; padding: 8px; cursor: pointer;
+    display: grid; gap: 6px; margin-left: auto; background: none; border: 0; padding: 8px;
   }
   .nav__toggle span { display: block; width: 24px; height: 1.5px; background: var(--ink); transition: transform .3s; }
   .nav__toggle[aria-expanded="true"] span:first-child { transform: translateY(3.75px) rotate(45deg); }
