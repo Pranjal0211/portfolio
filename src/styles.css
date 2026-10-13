@@ -31,6 +31,19 @@
     cursor: url("./assets/cursor-sparkle-hot.svg") 13 16, pointer;
   }
 }
+
+/* Sparkle trail (see SparkleTrail.jsx). */
+.sparkle-layer { position: fixed; inset: 0; pointer-events: none; z-index: 9999; overflow: hidden; }
+.sparkle {
+  position: absolute;
+  filter: drop-shadow(0 0 2px rgba(243, 213, 138, .7));
+  animation: sparkleFade .9s cubic-bezier(.2, .7, .3, 1) forwards;
+}
+@keyframes sparkleFade {
+  0%   { opacity: 0; transform: translate(0, 0) scale(.4) rotate(0deg); }
+  15%  { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(.2) rotate(var(--spin)); }
+}
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 body {
   margin: 0;
