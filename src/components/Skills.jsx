@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { skills } from '../data.js';
 import SectionHead from './SectionHead.jsx';
+import Reveal from './Reveal.jsx';
 
 export default function Skills() {
   const [active, setActive] = useState(skills[0].id);
@@ -19,7 +20,7 @@ export default function Skills() {
     <section className="section" id="skills">
       <div className="wrap">
         <SectionHead num="04" eyebrow="Skills" title="The toolkit," emphasis="sorted by what it's for." />
-        <div className="tabs">
+        <Reveal className="tabs">
           <div className="tabs__list" role="tablist">
             {skills.map((s, i) => (
               <button
@@ -52,7 +53,7 @@ export default function Skills() {
               </ul>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

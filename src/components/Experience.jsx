@@ -1,5 +1,6 @@
 import { jobs } from '../data.js';
 import SectionHead from './SectionHead.jsx';
+import Reveal from './Reveal.jsx';
 
 export default function Experience() {
   return (
@@ -8,7 +9,7 @@ export default function Experience() {
         <SectionHead num="02" eyebrow="Experience" title="Where I've worked," emphasis="and what I left behind." />
         <div className="jobs">
           {jobs.map((job) => (
-            <article className="job" key={`${job.company}-${job.role}`}>
+            <Reveal as="article" className="job" key={`${job.company}-${job.role}`}>
               <div className="job__stat">
                 <span className="job__num">{job.stat}</span>
                 <span className="job__numlabel">{job.statLabel}</span>
@@ -22,7 +23,7 @@ export default function Experience() {
                   {job.points.map((pt) => <li key={pt}>{pt}</li>)}
                 </ul>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

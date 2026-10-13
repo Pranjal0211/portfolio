@@ -1,12 +1,13 @@
 import { education } from '../data.js';
 import SectionHead from './SectionHead.jsx';
+import Reveal from './Reveal.jsx';
 
 export default function Education() {
   return (
     <section className="section section--tint" id="education">
       <div className="wrap">
         <SectionHead num="03" eyebrow="Study" title="Where I learned," emphasis="and what I keep learning." />
-        <div className="edu">
+        <Reveal className="edu">
           <div className="edu__main">
             <h3 className="edu__degree">{education.degree}</h3>
             <p className="edu__school">{education.school}</p>
@@ -29,7 +30,7 @@ export default function Education() {
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { projectFilters, projects } from '../data.js';
 import SectionHead from './SectionHead.jsx';
+import Reveal from './Reveal.jsx';
 
 export default function Work() {
   const [filter, setFilter] = useState('all');
@@ -26,7 +27,7 @@ export default function Work() {
 
         <div className="cards">
           {visible.map((p) => (
-            <article className="card" key={p.title}>
+            <Reveal as="article" className="card" key={p.title}>
               <div className="card__media" style={{ '--tint': p.tint }}>
                 <span>{p.motto}</span>
               </div>
@@ -37,7 +38,7 @@ export default function Work() {
                 {p.tags.map((t) => <li key={t}>{t}</li>)}
               </ul>
               <a href={p.href} className="card__link" target="_blank" rel="noopener">GitHub →</a>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

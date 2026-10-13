@@ -1,3 +1,4 @@
+import Reveal from './Reveal.jsx';
 import { about } from '../data.js';
 
 export default function About() {
@@ -5,21 +6,21 @@ export default function About() {
     <section className="section" id="about">
       <div className="wrap about">
         <p className="eyebrow">Hello</p>
-        <h2 className="statement">
+        <Reveal as="h2" className="statement">
           {about.statement.map((part, i) => (part.em ? <em key={i}>{part.text}</em> : part.text))}
-        </h2>
-        <div className="about__body">
+        </Reveal>
+        <Reveal className="about__body">
           {about.paragraphs.map((p) => <p key={p}>{p}</p>)}
           <p className="handnote">{about.handnote}</p>
-        </div>
-        <ul className="stats">
+        </Reveal>
+        <Reveal as="ul" className="stats">
           {about.stats.map((s) => (
             <li key={s.label}>
               <span className="stats__num">{s.num}</span>
               <span className="stats__label">{s.label}</span>
             </li>
           ))}
-        </ul>
+        </Reveal>
       </div>
     </section>
   );
