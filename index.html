@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pranjal Sharma</title>
+  <meta name="description" content="Pranjal Sharma — portfolio, projects and experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Inter:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">Pranjal</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links">
+        <a href="#about">Hello</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Study</a>
+        <a href="#skills">Skills</a>
+        <a href="#beyond">Beyond</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============
+       The photo is one full-bleed layer. The name is a second layer
+       split into two words, with an empty column in the middle so
+       Pranjal stands between her first name and her surname. -->
+  <section class="hero">
+    <img
+      class="hero__photo"
+      src="images/hero-thigh-centered.jpg"
+      alt="Portrait of Pranjal Sharma"
+      width="2400"
+      height="1440"
+      fetchpriority="high"
+    >
+    <div class="hero__shade" aria-hidden="true"></div>
+    <h1 class="hero__name">
+      <span class="hero__first">Pranjal</span>
+      <span class="hero__last">Sharma</span>
+    </h1>
+    <div class="hero__meta">
+      <p class="hero__tagline">Design, product and the people they're for.</p>
+      <div class="hero__ctas">
+        <a href="#work" class="btn btn--solid">Work <span aria-hidden="true">↓</span></a>
+        <a href="#skills" class="btn btn--ghost">Skills <span aria-hidden="true">→</span></a>
+        <a href="resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Résumé <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll">Scroll <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <main>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <p class="eyebrow">Hello</p>
+        <h2 class="statement reveal">
+          I like problems that sit between <em>how things work</em> and <em>how people feel</em> about them.
+        </h2>
+        <div class="about__body reveal">
+          <p>Write two or three short paragraphs here. Who you are, what you're studying or doing now, and the thread that ties your interests together. Keep it in your own voice.</p>
+          <p>End with what you're looking for: an internship, a full-time role, collaborators, or just good conversations.</p>
+          <p class="handnote">— currently based in Your City ✦</p>
+        </div>
+        <ul class="stats reveal">
+          <li><span class="stats__num">3</span><span class="stats__label">Internships</span></li>
+          <li><span class="stats__num">12+</span><span class="stats__label">Projects shipped</span></li>
+          <li><span class="stats__num">2</span><span class="stats__label">Languages spoken</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section section--tint" id="work">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num">01</span>
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 class="section__title">Things I've made,<br><em>and why they mattered.</em></h2>
+          </div>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="product">Product</button>
+          <button class="chip" data-filter="code">Code</button>
+          <button class="chip" data-filter="strategy">Strategy</button>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" data-cat="product">
+            <div class="card__media" style="--tint:#E9C9C1"></div>
+            <p class="card__cat">Product · 2026</p>
+            <h3 class="card__title">Project One</h3>
+            <p class="card__hook">One sentence on the problem and what changed because of your work.</p>
+            <ul class="tags"><li>Figma</li><li>User research</li></ul>
+            <a href="#" class="card__link">View case study →</a>
+          </article>
+
+          <article class="card reveal" data-cat="code">
+            <div class="card__media" style="--tint:#D9C7B5"></div>
+            <p class="card__cat">Engineering · 2026</p>
+            <h3 class="card__title">Project Two</h3>
+            <p class="card__hook">A web app that does one clear thing. Mention a number if you have one.</p>
+            <ul class="tags"><li>React</li><li>Python</li><li>SQL</li></ul>
+            <a href="#" class="card__link">GitHub →</a>
+          </article>
+
+          <article class="card reveal" data-cat="strategy">
+            <div class="card__media" style="--tint:#E5D3C8"></div>
+            <p class="card__cat">Strategy · 2025</p>
+            <h3 class="card__title">Project Three</h3>
+            <p class="card__hook">A brand or market teardown: the answer first, then the evidence.</p>
+            <ul class="tags"><li>Market sizing</li><li>Positioning</li></ul>
+            <a href="#" class="card__link">Read it →</a>
+          </article>
+
+          <article class="card reveal" data-cat="product code">
+            <div class="card__media" style="--tint:#CFB7AE"></div>
+            <p class="card__cat">Side project · 2025</p>
+            <h3 class="card__title">Project Four</h3>
+            <p class="card__hook">Something you built just because you were curious. These are often the most memorable.</p>
+            <ul class="tags"><li>JavaScript</li><li>APIs</li></ul>
+            <a href="#" class="card__link">Try it →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num">02</span>
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2 class="section__title">Where I've worked,<br><em>and what I left behind.</em></h2>
+          </div>
+        </header>
+
+        <div class="jobs">
+          <article class="job reveal">
+            <div class="job__stat">
+              <span class="job__num">40%</span>
+              <span class="job__numlabel">faster onboarding</span>
+            </div>
+            <div class="job__body">
+              <p class="eyebrow">Summer 2026 · City</p>
+              <h3 class="job__role">Role Title <span>at Company</span></h3>
+              <ul class="job__list">
+                <li>Lead with the outcome, then how you did it.</li>
+                <li>Name the tools and the people you worked with.</li>
+                <li>One bullet with a concrete number.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job__stat">
+              <span class="job__num">$2M</span>
+              <span class="job__numlabel">pipeline analyzed</span>
+            </div>
+            <div class="job__body">
+              <p class="eyebrow">Spring 2026 · Remote</p>
+              <h3 class="job__role">Role Title <span>at Company</span></h3>
+              <ul class="job__list">
+                <li>What you owned end to end.</li>
+                <li>What you recommended and what happened next.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--tint" id="education">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num">03</span>
+          <div>
+            <p class="eyebrow">Study</p>
+            <h2 class="section__title">What I'm learning,<br><em>from two directions.</em></h2>
+          </div>
+        </header>
+
+        <div class="edu reveal">
+          <div class="edu__main">
+            <h3 class="edu__degree">B.S. in Your Major</h3>
+            <p class="edu__school">Your University</p>
+            <dl class="edu__facts">
+              <div><dt>GPA</dt><dd>3.9</dd></div>
+              <div><dt>Graduating</dt><dd>May 2028</dd></div>
+              <div><dt>Minor</dt><dd>Your Minor</dd></div>
+            </dl>
+          </div>
+          <div class="edu__courses">
+            <div>
+              <p class="eyebrow">The technical side</p>
+              <ul class="course-list">
+                <li>Data Structures</li><li>Databases</li><li>Systems Analysis</li><li>Statistics</li>
+              </ul>
+            </div>
+            <div>
+              <p class="eyebrow">The human side</p>
+              <ul class="course-list">
+                <li>Psychology</li><li>Consumer Behavior</li><li>Design Thinking</li><li>Writing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num">04</span>
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2 class="section__title">The toolkit,<br><em>sorted by what it's for.</em></h2>
+          </div>
+        </header>
+
+        <div class="tabs reveal">
+          <div class="tabs__list" role="tablist">
+            <button role="tab" aria-selected="true" aria-controls="tab-build" id="t-build">Build</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-analyze" id="t-analyze" tabindex="-1">Analyze</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-design" id="t-design" tabindex="-1">Design</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-lead" id="t-lead" tabindex="-1">Lead</button>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="tab-build" aria-labelledby="t-build">
+            <p class="tabs__lede">Turning an idea into something people can click.</p>
+            <ul class="tags tags--lg"><li>JavaScript</li><li>React</li><li>Python</li><li>HTML &amp; CSS</li><li>Git</li></ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="tab-analyze" aria-labelledby="t-analyze" hidden>
+            <p class="tabs__lede">Finding the one number that changes the decision.</p>
+            <ul class="tags tags--lg"><li>SQL</li><li>Excel</li><li>Tableau</li><li>A/B testing</li></ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="tab-design" aria-labelledby="t-design" hidden>
+            <p class="tabs__lede">Making the right thing feel obvious.</p>
+            <ul class="tags tags--lg"><li>Figma</li><li>User interviews</li><li>Prototyping</li><li>Accessibility</li></ul>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="tab-lead" aria-labelledby="t-lead" hidden>
+            <p class="tabs__lede">Getting a room of people pointed the same way.</p>
+            <ul class="tags tags--lg"><li>Agile</li><li>Roadmapping</li><li>Presenting</li><li>Mentoring</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEYOND ============ -->
+    <section class="section section--tint" id="beyond">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__num">05</span>
+          <div>
+            <p class="eyebrow">Beyond work</p>
+            <h2 class="section__title">The rest of me,<br><em>in no particular order.</em></h2>
+          </div>
+        </header>
+        <div class="beyond">
+          <figure class="polaroid reveal" style="--rot:-3deg">
+            <div class="polaroid__img" style="--tint:#E2C2B8"></div>
+            <figcaption>morning runs</figcaption>
+          </figure>
+          <figure class="polaroid reveal" style="--rot:2deg">
+            <div class="polaroid__img" style="--tint:#D7C3B3"></div>
+            <figcaption>reading list</figcaption>
+          </figure>
+          <figure class="polaroid reveal" style="--rot:-1.5deg">
+            <div class="polaroid__img" style="--tint:#E8D1C6"></div>
+            <figcaption>favorite café</figcaption>
+          </figure>
+          <figure class="polaroid reveal" style="--rot:3deg">
+            <div class="polaroid__img" style="--tint:#CDB4AA"></div>
+            <figcaption>on repeat</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light">Say hello</p>
+        <h2 class="contact__title">What should we <em>build?</em></h2>
+        <a class="contact__email" href="mailto:pranjalsharma0211@gmail.com">pranjalsharma0211@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year"></span> Pranjal Sharma</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

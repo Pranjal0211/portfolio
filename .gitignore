@@ -1,0 +1,6 @@
+.DS_Store
+_debug.html
+
+# Only publish photos the site actually uses; keep originals and alternates local.
+images/*
+!images/hero-thigh-centered.jpg
