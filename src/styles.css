@@ -34,15 +34,21 @@
 
 /* Sparkle trail (see SparkleTrail.jsx). */
 .sparkle-layer { position: fixed; inset: 0; pointer-events: none; z-index: 9999; overflow: hidden; }
-.sparkle {
+.spark {
   position: absolute;
-  filter: drop-shadow(0 0 2px rgba(243, 213, 138, .7));
-  animation: sparkleFade .9s cubic-bezier(.2, .7, .3, 1) forwards;
+  width: var(--size);
+  height: var(--size);
+  margin: calc(var(--size) / -2) 0 0 calc(var(--size) / -2);
+  background: var(--color);
+  animation: sparkDrift var(--life, .9s) cubic-bezier(.2, .7, .3, 1) forwards;
 }
-@keyframes sparkleFade {
-  0%   { opacity: 0; transform: translate(0, 0) scale(.4) rotate(0deg); }
-  15%  { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); }
-  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(.2) rotate(var(--spin)); }
+.spark--dot { border-radius: 50%; box-shadow: 0 0 4px var(--color); }
+.spark--star { clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%); }
+.spark--diamond { clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+.spark--ring { background: none; border: 1.5px solid var(--color); border-radius: 50%; }
+@keyframes sparkDrift {
+  0%   { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(.25) rotate(var(--spin)); }
 }
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 body {
