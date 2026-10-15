@@ -10,6 +10,7 @@ import SideQuests from './components/SideQuests.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import SparkleTrail from './components/SparkleTrail.jsx';
+import ButterflyCursor from './components/ButterflyCursor.jsx';
 
 export default function App() {
   // Sections render after the browser's own #hash lookup, so a deep link
@@ -34,6 +35,7 @@ export default function App() {
       </main>
       <Footer />
       <SparkleTrail />
+      <ButterflyCursor />
     </>
   );
 }
