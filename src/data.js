@@ -253,3 +253,16 @@ export const sideQuests = [
   { glyph: '</>', caption: 'my React notebook', tint: '#E8D1C6', rot: '-1.5deg', href: 'https://github.com/Pranjal0211/Namaste-React' },
   { glyph: 'O(n)', caption: 'daily data structures reps', tint: '#CDB4AA', rot: '3deg', href: 'https://github.com/Pranjal0211/DSA-Programming' },
 ];
+
+// The butterfly that replaces the mouse cursor.
+// To change its colour, set `selected` to one of the names in `colors`.
+export const butterflyCursor = {
+  selected: 'lavender',
+  colors: {
+    lavender: { fill: '#B98AE0', ink: '#17121A' },
+    rose: { fill: '#D97893', ink: '#2A1A17' },
+    blush: { fill: '#F4BCCD', ink: '#5E2236' },
+    // A list of colours makes a gradient across the wing.
+    gilded: { fill: ['#FBE7B0', '#E9C46A', '#C8922B'], ink: '#3A2710' },
+  },
+};
