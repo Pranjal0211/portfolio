@@ -7,3 +7,6 @@ _debug.html
 images/
 public/images/*
 !public/images/hero-thigh-centered.jpg
+
+# Impeccable critique snapshots (local backlog)
+.impeccable/
