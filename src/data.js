@@ -257,7 +257,7 @@ export const sideQuests = [
 // The butterfly that replaces the mouse cursor.
 // To change its colour, set `selected` to one of the names in `colors`.
 export const butterflyCursor = {
-  selected: 'lavender',
+  selected: 'blush',
   colors: {
     lavender: { fill: '#B98AE0', ink: '#17121A' },
     rose: { fill: '#D97893', ink: '#2A1A17' },
