@@ -93,3 +93,4 @@ Also: React warns about the `fetchPriority` prop on the hero `<img>`.
 ## Done
 
 - [x] 2026-10-16: spacing pass. Every gap now comes from one 4px scale (`--space-1` to `--space-8`, plus `--section-y`, `--head-gap`, `--card-pad` in `styles.css`). Sections are 10–20% shorter.
+- [x] 2026-10-16: About widened to full width with justified paragraphs, highlighted keywords (`**like this**` in `data.js`), a "Currently at" line under the heading, and the "Hello" eyebrow removed.

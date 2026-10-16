@@ -35,10 +35,13 @@ export const about = {
     { text: ' then ' },
     { text: 'trying to break it.', em: true },
   ],
+  // A short line under the statement.
+  current: 'Currently at Norwegian Cruise Line and V.Two',
+  // Wrap a phrase in **double asterisks** to highlight it.
   paragraphs: [
-    "I'm a full-stack developer with a Master's in Computer Science from Cal State Fullerton. On the front end I work in React, Next.js and TypeScript. On the back end it's Java and Spring Boot, REST APIs and microservices, running on AWS and Azure.",
-    "Right now I'm a Software Development Engineer in Test at Norwegian Cruise Line and a Software Engineer at V.Two. Before that, I built healthcare apps at Humanitarians AI and Cognizant, and spent a year teaching 120+ undergrads at CSUF.",
-    "Lately I've been going deep on agentic AI: the Claude API, tool use and the Model Context Protocol. I'm now an Anthropic-certified Claude Developer and Associate.",
+    "I'm a full-stack developer with a **Master's in Computer Science** from Cal State Fullerton. On the front end I work in **React, Next.js and TypeScript**. On the back end it's **Java and Spring Boot**, REST APIs and microservices, running on AWS and Azure.",
+    "Right now I'm a **Software Development Engineer in Test** at Norwegian Cruise Line and a Software Engineer at V.Two. Before that, I built healthcare apps at Humanitarians AI and Cognizant, and spent a year teaching 120+ undergrads at CSUF.",
+    "Lately I've been going deep on **agentic AI**: the Claude API, tool use and the Model Context Protocol. I'm now an **Anthropic-certified Claude Developer and Associate**.",
   ],
   handnote: '— currently building from Greater Philadelphia ✦',
   stats: [
