@@ -89,3 +89,7 @@ Also: React warns about the `fetchPriority` prop on the hero `<img>`.
 2. If you could show only one project, which one, and why isn't Work built around it?
 3. How does the butterfly keep its charm without taking the hand cursor away from links?
 
+
+## Done
+
+- [x] 2026-10-16: spacing pass. Every gap now comes from one 4px scale (`--space-1` to `--space-8`, plus `--section-y`, `--head-gap`, `--card-pad` in `styles.css`). Sections are 10–20% shorter.
